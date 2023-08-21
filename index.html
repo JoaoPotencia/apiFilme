@@ -8,25 +8,35 @@
     <title>Filmes</title>
     <script src="filme.js" type="module" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
-    <header>
-        <img src="img/Potência Filmes.png"
-            alt="">
-    </header>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#"><img src="img/P.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <h1 class="title">Filmes</h1>
-    <form>
-        <input name="pesquisa" class="inputbox" placeholder="Digite o nome de um Filme">
-        <button>Pesquisa</button>
-    </form>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarTogglerDemo02">
+            </ul>
+            <form class="d-flex">
+                <input name="pesquisa" class="inputbox" placeholder="Digite o nome de um Filme">
+                <button>Pesquisa</button>
+            </form>
+
+        </div>
+    </nav>
+    <!-- <h1 class="title">Filmes</h1> -->
     <div class="lista">
-       
+
     </div>
-    
+
     <!--Rodapé-->
-    <footer>
+    <footer class="text-center">
         João Vitor Santos Raimondi &#169 2023
     </footer>
 </body>
