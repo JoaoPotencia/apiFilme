@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
+/**/
+nav img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +16,7 @@
 }
 
 :root {
-    --bg-color: white;
+    --bg-color: black;
     --primary-color: rgb(51,44,120);
 }
 
@@ -18,10 +25,11 @@ header {
 }
 
 
-header img{
+.img{
     width: 50rem;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 
 body{
@@ -30,26 +38,11 @@ body{
     /* justify-content: center;
     align-items: center; */
     min-height: 50vh;
-    background-color: var(--bg-color);
 }
 
 
-/* form */
-.container {
-    flex-grow: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    padding: 20px;
-    gap: 40px;
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
 
-}
-
-/*Formulario*/
+/*Form*/
 form {
     margin: 10px;
     padding: 10px;
@@ -62,24 +55,20 @@ form {
 /*Input para pesquisa*/
 form input{
     padding: 3px;
-    border-radius: 20px;
     outline: none;
-    
 }
 
 /*Button form*/
 form button{
     padding: 8px;
-    border-radius: 20px;
     background-color: gray;
     color: white;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
 }
 
 form button:hover{
-    background: darkgreen;
+    background: rgb(0, 0, 0);
 }
 
 /*h1*/
@@ -87,74 +76,6 @@ form button:hover{
     font-size: 40px;
     text-align: center;
     color: var(--primary-color);
-}
-
-
-.row{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-}
-
-.inputbox{
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    height: 40px;
-}
-.inputbox label{
-    position: relative;
-    top: 0;
-    left: 10px;
-    font-size: 20px;
-    color: var(--primary-color);
-    transition: .5s;
-    cursor: text;
-
-}
-
-.inputbox input{
-    position: absolute;
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    box-shadow: none;
-    border: none;
-    outline: none;
-    border-radius: 2px;
-    transition: .5s;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0 10px;
-    color: white;
-}
-
-.inputbox input:focus ,
-.inputbox input:valid{
-    height: 100%;
-}
-
-
-
-.inputbox input:focus + label,
-.inputbox input:valid +label{
-    top: -40px;
-    left: 0;
-}
-
-.container button {
-    justify-self: center;
-    width: 200px;
-    height: 50px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 2;
 }
 
 /*Div Item imagem*/
@@ -181,6 +102,7 @@ form button:hover{
     border: 2px solid gray;
     border-radius: 10px;
     margin: 5px;
+    color: white;
 }
 
 .item:hover{
@@ -191,6 +113,19 @@ form button:hover{
 
 
 footer{
-    color: var(--primary-color);
+    color: white;
+    justify-content: center;
+    align-items: center;
 
 }
+
+
+/*NavBar*/
+ 
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+
